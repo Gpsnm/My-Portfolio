@@ -22,6 +22,7 @@ nav a {
 }
 /* main grid */
 main{
+    font-family: var(--main-font);
     display: grid;
     justify-content: center;
     grid-template-columns: 3fr 1fr;
@@ -54,7 +55,6 @@ main{
 }
 /* about me sections and style */
 h1{
-    font-family:var(--main-font);
     font-size: 56px;
     padding:100px 0px 0px 100px;
     display: block;
@@ -63,7 +63,6 @@ h1 span{
     display: block;
 }
 .about p{
-    font-family: var(--main-font);
     font-size: 32px;
     padding: 50px 100px;
 }
@@ -74,3 +73,50 @@ h1 span{
     padding-right: 20px;
     padding-top: 20px;
 }
+
+/* project grid and styles */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    background-color:#618985;
+    grid-template-areas:
+    "projectOne projectOne"
+    "projectTwo projectThree"
+    "projectFour projectFive";
+}
+
+/* project grid template area */
+#projectOne{
+    grid-area:projectOne;
+}
+#projectTwo{
+    grid-area:projectTwo;
+}
+#projectThree{
+    grid-area:projectThree;
+}
+#projectFour{
+    grid-area:projectFour;
+}
+#projectFive{
+    grid-area:projectFive;
+}
+
+/* project styles */
+.projectCard{
+        display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:20px;
+    width: auto;
+    border: solid 5px red;
+}
+    
+    .projectCard h2{
+        font-size: 32px;
+        padding-top: 20px;
+    }
+    .projectCard p {
+    }
