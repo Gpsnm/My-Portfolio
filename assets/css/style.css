@@ -1,0 +1,44 @@
+/* nav Style */
+nav{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+    background-color: #fff;
+    width: auto;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 28px;
+    padding: 20px;
+}
+/* main grid */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 700px 500px 500px;
+    background-color: black;
+    border:solid 5px red;
+}
+/* main sections */
+.about{
+    width: auto;
+    height:auto;
+    background-color: white;
+    border: solid 5px red;
+}
+.projects{
+        width: auto;
+    height:500px;
+    background-color: grey;
+    border: solid 5px red;
+}
+
+.contact{
+    width: auto;
+    height:500px;
+    background-color: white;
+    border: solid 5px red;
+}
