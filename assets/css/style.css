@@ -1,61 +1,56 @@
 :root{
 --main-font: 'Josefin Sans', sans-serif;
+--main-text-color:#000;
+--main-background:#FAF3DD;
 }
 /* nav Style */
 nav{
 display: flex;
 justify-content: flex-end;
 align-items: center;
-background-color: #fff;
+background-color:var(--main-background);
 width: auto;
 }
 
 nav a {
     font-family:var(--main-font);
-    color: black;
+    color:var(--main-text-color);
     text-decoration: none;
     list-style: none;
     font-size: 28px;
-    padding: 20px;
+    padding: 25px;
 }
 /* main grid */
 main{
     display: grid;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 700px 1000px 500px;
-    background-color: black;
-    border:solid 5px red;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
     "about profilePic"
     "projects projects"
     "contact contact" ;
 }
-/* grid template area */
+/* grid template area and styles */
 #about{
     grid-area: about;
     display: flex;
     width: auto;
-    height:auto;
-    background-color: white;
+    background-color:var(--main-background);
 }
 #projects{
     grid-area: projects;
     width: auto;
-    height:auto;
-    background-color: grey;
-    border: solid 5px red;
+    background-color:#618985;
 }
 #contact{
-    grid-area: contacts;
+    grid-area: contact;
     width: auto;
-    height:500px;
-    background-color: white;
-    border: solid 5px red;
+    background-color:var(--main-background);
 }
 #profilePic{
     grid-area: profilePic;
-    background-color: #fff;
+    background-color: var(--main-background);
 }
 /* about me sections and style */
 h1{
@@ -75,7 +70,6 @@ h1 span{
 .profilePic img {
     max-width: 100%;
     height: auto;
-    background-color: #fff;
     border-radius: 50%;
     padding-right: 20px;
     padding-top: 20px;
