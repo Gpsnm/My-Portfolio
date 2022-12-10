@@ -22,16 +22,28 @@ main{
     background-color: black;
     border:solid 5px red;
 }
-/* main sections */
+/* about me sections and style */
 .about{
+    display: flex;
     width: auto;
     height:auto;
     background-color: white;
-    border: solid 5px red;
 }
+h1{
+    font-size: 56px;
+    padding:100px 0px 0px 100px;
+}
+span{
+    display: block;
+}
+p{
+    font-size: 32px;
+    padding: 50px 100px;
+}
+/* project grid and style  */
 .projects{
         width: auto;
-    height:500px;
+    height:auto;
     background-color: grey;
     border: solid 5px red;
 }
