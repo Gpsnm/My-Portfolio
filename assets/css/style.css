@@ -112,6 +112,7 @@ p{
     justify-content: center;
     align-items: center;
     width: auto;
+    margin-bottom: 30px;
 }
 .projectCard img {
         height: 500px;
@@ -155,3 +156,41 @@ p{
         background-color: #618985;
         border-radius: 50px;
     }
+
+    /* media queries  */
+/* to make the grid display a single line at a time below 600px */
+@media screen and (max-width:800px){
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:#618985;
+    grid-template-areas:
+    "projectOne projectOne"
+    "projectTwo projectTwo" 
+    "projectThree projectThree"
+    "projectFour projectFour" 
+    "projectFive projectFive";
+}
+}
+/* used to center profile image if pixels drops below 800px */
+@media screen and (max-width:800px){
+    .profilePic img {
+    max-width: 300px;
+    }
+    .profilePic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    display: grid;
+    grid-template-areas:
+    "profilePic profilePic"
+    "about about"
+    "projects projects"
+    "contact contact" ;
+}
+}
