@@ -12,7 +12,7 @@ Project is created with HTML AND CSS
 
 ## Image of web page
 
-
+<img src="./assets/images/gpsnm.github.io_My-Portfolio_ (1).png" alt="">
 ## Link to live site
 
 https://gpsnm.github.io/My-Portfolio/
