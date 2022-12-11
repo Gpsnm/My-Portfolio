@@ -23,10 +23,10 @@ nav a {
 /* main grid */
 main{
     font-family: var(--main-font);
+    color: var(--main-text-color);
     display: grid;
     justify-content: center;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
     "about profilePic"
     "projects projects"
@@ -77,6 +77,8 @@ h1 span{
 /* project grid and styles */
 .projects{
     display: grid;
+    padding-left:200px;
+    padding-right: 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     background-color:#618985;
@@ -118,5 +120,31 @@ h1 span{
         font-size: 32px;
         padding-top: 20px;
     }
-    .projectCard p {
+
+
+    /* contact section */
+    
+    .contact{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+    }
+
+  #projectOne img {
+        padding-top: 20px;
+        height: 600px;
+        width:60%;
+        object-fit: cover;
+        object-position: top;
+
+    }
+
+    #projectOne a {
+        display:flex;
+        width: 100%;
+        justify-content: center;
     }
