@@ -13,6 +13,8 @@ Project is created with HTML AND CSS
 ## Image of web page
 
 <img src="./assets/images/gpsnm.github.io_My-Portfolio_ (1).png" alt="">
+## Image of web page below 800px
+<img src="./assets/images/my-portfolio-responsive.png" alt="">
 
 
 ## Link to live site
