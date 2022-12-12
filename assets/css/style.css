@@ -12,14 +12,12 @@ display: flex;
 justify-content: flex-end;
 align-items: center;
 background-color:var(--main-background);
-width: auto;
 }
 
 nav a {
     font-family:var(--main-font);
     color:var(--main-text-color);
     text-decoration: none;
-    list-style: none;
     font-size: 28px;
     padding: 25px;
 }
@@ -42,17 +40,14 @@ main{
 #about{
     grid-area: about;
     display: flex;
-    width: auto;
     background-color:var(--main-background);
 }
 #projects{
     grid-area: projects;
-    width: auto;
     background-color:#618985;
 }
 #contact{
     grid-area: contact;
-    width: auto;
     background-color:var(--main-background);
 }
 #profilePic{
@@ -65,6 +60,7 @@ h1{
     padding:100px 0px 0px 100px;
     display: block;
 }
+/* to make the text sit on the line below */
 h1 span{
     display: block;
 }
@@ -72,6 +68,7 @@ p{
     font-size: 32px;
     padding: 50px 100px;
 }
+/* profile picture image size and style */
 .profilePic img {
     max-width: 100%;
     max-height: 60%;
@@ -81,8 +78,6 @@ p{
 /* project grid and styles */
 .projects{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     background-color:#618985;
     grid-template-areas:
     "projectOne projectOne"
@@ -113,7 +108,6 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
     margin-bottom: 30px;
 }
 .projectCard img {
@@ -126,7 +120,7 @@ p{
 }
     .projectCard h2{
         font-size: 32px;
-        padding:10px 0;
+        padding:20px 0;
     }
     .projectCard a {
         display:flex;
@@ -135,7 +129,7 @@ p{
         border-radius: 50px;
     }
     .projectCard a:hover{
-        width: 100%;
+        width: 90%;
     }
     /* contact section */
     .contact{
@@ -158,9 +152,19 @@ p{
         border-radius: 50px;
     }
 
-    /* media queries  */
-/* to make the grid display a single line at a time below 600px */
+
+/* used to make both grids stack one at a time below 800px */
 @media screen and (max-width:800px){
+    main{
+    display: grid;
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    grid-template-areas:
+    "profilePic profilePic"
+    "about about"
+    "projects projects"
+    "contact contact" ;
+}
 .projects{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,34 +177,25 @@ p{
     "projectFour projectFour" 
     "projectFive projectFive";
 }
-}
-/* used to center profile image if pixels drops below 800px */
-@media screen and (max-width:800px){
-    .profilePic img {
-    max-width: 700px;
-    }
+/* used to make profile picture center and larger at 800px  */
     .profilePic{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    main{
-        display: grid;
-    font-family: var(--main-font);
-    color: var(--main-text-color);
-    grid-template-areas:
-    "profilePic profilePic"
-    "about about"
-    "projects projects"
-    "contact contact" ;
-}
+    .profilePic img {
+    max-width: 700px;
+    }
+    /* used to bring heading text closer to profile image */
 h1{
     padding-top: 0px;
 }
 /* center nav below 800px */
-nav{display:flex;
+nav{
+    display:flex;
     justify-content: center;
 }
+/* used to remove all :hover effects below 800px */
 nav a:hover{
     font-size: 28px;
     text-decoration: none;
@@ -213,4 +208,5 @@ nav a:hover{
         height: 100px;
         border-radius: 0px;
         background-color:var(--main-background);
-}}
+}
+}
