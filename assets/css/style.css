@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 :root{
 --main-font: 'Josefin Sans', sans-serif;
 --main-text-color:#000;
